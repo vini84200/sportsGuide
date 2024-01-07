@@ -3,6 +3,7 @@ import {useParams} from "react-router";
 import {data_all, esporteId} from "../utils/data";
 import {Redirect} from "react-router-dom";
 import {IonBackButton, IonButton, IonContent, IonHeader, IonLabel, IonPage, IonTitle, IonToolbar} from "@ionic/react";
+import Markdown from "react-markdown";
 
 interface ParamTypes {
   id: string
@@ -19,6 +20,13 @@ function Aprender(props: AprenderProps) {
     console.warn(`Aprender: ${id} não encontrado`)
     return <Redirect to={`/${props.esporte}`}/>
   }
+  const [content, setContent] = React.useState("");
+  React.useEffect(() => {
+    (async () => {
+      setContent(await import(`../conteudo/${props.esporte}/aprender/${data.arquivo}.md?raw`
+        ).then((module) => module.default))
+    })()
+  }, [data.arquivo])
   return (
     <IonPage>
       <IonHeader>
@@ -36,10 +44,14 @@ function Aprender(props: AprenderProps) {
         </IonToolbar>
       </IonHeader>
       <IonContent>
-        <p style={{
+        <div style={{
           padding: "1em",
           textAlign: "justify"
-        }}>{data.texto}</p>
+        }}>
+          <Markdown>
+            {content}
+          </Markdown>
+        </div>
       </IonContent>
     </IonPage>
   );

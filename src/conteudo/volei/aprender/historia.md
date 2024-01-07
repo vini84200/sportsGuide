@@ -1,0 +1,10 @@
+## Onde surgiu o voleibol?
+O voleibol foi criado em 1895, pelo americano William George Morgan, então diretor de educação física da Associação Cristã de Moços (ACM) na cidade de Holyoke, em Massachusetts, nos Estados Unidos. Morgan tinha o objetivo de criar um esporte sem contato físico entre os jogadores, de modo a minimizar os riscos de lesões. Por isso, o voleibol foi inicialmente chamado de mintonette, em referência ao badminton, esporte que também inspirou o basquete, criado em 1891.
+## Como o voleibol chegou ao Brasil?
+O voleibol chegou ao Brasil em 1915, pelas mãos do professor de educação física Augusto de Almeida, que trouxe o esporte dos Estados Unidos. O primeiro jogo de voleibol no Brasil aconteceu no Colégio Marista, em São Paulo, em 1916. O primeiro campeonato brasileiro de voleibol foi realizado em 1928, no Rio de Janeiro, e o primeiro campeonato mundial de voleibol aconteceu em 1949, na Tchecoslováquia.
+## Voleibol nas Olimpíadas
+O voleibol foi incluído nas Olimpíadas em 1964, nos Jogos Olímpicos de Tóquio, no Japão. O voleibol de praia foi incluído nas Olimpíadas em 1996, nos Jogos Olímpicos de Atlanta, nos Estados Unidos. O Brasil é o país que mais conquistou medalhas olímpicas no voleibol, com 12 medalhas, sendo 5 de ouro, 3 de prata e 4 de bronze.
+## Voleibol no Brasil
+O voleibol é um dos esportes mais populares no Brasil, sendo praticado por milhões de pessoas em todo o país. O Brasil é o país que mais conquistou medalhas olímpicas no voleibol, com 12 medalhas, sendo 5 de ouro, 3 de prata e 4 de bronze. O voleibol é um dos esportes mais populares no Brasil, sendo praticado por milhões de pessoas em todo o país. O Brasil é o país que mais conquistou medalhas olímpicas no voleibol, com 12 medalhas, sendo 5 de ouro, 3 de prata e 4 de bronze.
+
+![Voleibol](https://conteudo.imguol.com.br/c/esporte/49/2023/06/25/lucarelli-ataca-em-jogo-entre-brasil-e-franca-na-liga-das-nacoes-1687714189202_v2_450x450.jpg)
