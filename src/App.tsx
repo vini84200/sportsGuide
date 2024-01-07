@@ -1,6 +1,7 @@
-import { Redirect, Route } from 'react-router-dom';
-import { IonApp, IonRouterOutlet, setupIonicReact } from '@ionic/react';
-import { IonReactRouter } from '@ionic/react-router';
+import React from 'react';
+import {Redirect, Route} from 'react-router-dom';
+import {IonApp, IonRouterOutlet, setupIonicReact} from '@ionic/react';
+import {IonReactRouter} from '@ionic/react-router';
 import Home from './pages/Home';
 
 /* Core CSS required for Ionic components to work properly */
@@ -21,6 +22,8 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
+import Main from "./pages/Main";
+import Aprender from "./components/Aprender";
 
 setupIonicReact();
 
@@ -29,10 +32,25 @@ const App: React.FC = () => (
     <IonReactRouter>
       <IonRouterOutlet>
         <Route exact path="/home">
-          <Home />
+          <Home/>
+        </Route>
+        <Route exact path="/volei">
+          <Route exact path="">
+            <Main esporte='volei'/>
+          </Route>
+        </Route>
+        <Route exact path="/volei/aprender/:id">
+          <Aprender esporte='volei' />
+        </Route>
+
+        <Route exact path="/futebol">
+          <Main esporte='futebol'/>
+        </Route>
+        <Route exact path="/basquete">
+          <Main esporte='basquete'/>
         </Route>
         <Route exact path="/">
-          <Redirect to="/home" />
+          <Redirect to="/home"/>
         </Route>
       </IonRouterOutlet>
     </IonReactRouter>
