@@ -49,7 +49,12 @@ function Pratica(props: { esporte: EsporteData }) {
 function Quiz(props: { esporte: EsporteData }) {
   return (
     <div>
-      <h1>Quiz {props.esporte.nome}</h1>
+      {props.esporte.quiz?.map((item) => (
+        <IonItem key={item.id} href={`/volei/quiz/${item.id}`}>
+          <IonIcon slot={"start"} icon={item.icon}/>
+          <IonLabel>{item.nome}</IonLabel>
+        </IonItem>
+      ))}
     </div>
   )
 }

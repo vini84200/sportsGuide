@@ -24,6 +24,7 @@ import '@ionic/react/css/display.css';
 import './theme/variables.css';
 import Main from "./pages/Main";
 import Aprender from "./components/Aprender";
+import Quiz from "./pages/Quiz";
 
 setupIonicReact();
 
@@ -41,6 +42,12 @@ const App: React.FC = () => (
         </Route>
         <Route exact path="/volei/aprender/:id">
           <Aprender esporte='volei' />
+        </Route>
+        <Route exact path="/volei/pratica">
+          Pratica volei
+        </Route>
+        <Route exact path="/volei/quiz/:id">
+          <Quiz esporte='volei'/>
         </Route>
 
         <Route exact path="/futebol">
