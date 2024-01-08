@@ -36,15 +36,10 @@ const App: React.FC = () => (
           <Home/>
         </Route>
         <Route exact path="/volei">
-          <Route exact path="">
             <Main esporte='volei'/>
-          </Route>
         </Route>
         <Route exact path="/volei/aprender/:id">
           <Aprender esporte='volei' />
-        </Route>
-        <Route exact path="/volei/pratica">
-          <img src={"https://pa1.narvii.com/6425/9c9760bfcfde6ac7940292ae3855a3fc3e8e561c_hq.gif"} alt={"gif"}/>
         </Route>
         <Route exact path="/volei/quiz/:id">
           <Quiz esporte='volei'/>

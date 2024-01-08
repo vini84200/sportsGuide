@@ -12,6 +12,7 @@ interface Pergunta {
   pergunta: string;
   respostas: string[];
   respostaCerta: number;
+  dica?: string;
 }
 
 export interface QuizItem {
@@ -69,7 +70,8 @@ export const data_all: Record<esporteId, EsporteData> = {
               "Walter",
               "Wesley"
             ],
-            respostaCerta: 1
+            respostaCerta: 1,
+            dica: "Começa com W"
           },
           {
             pergunta: "Em que ano foi disputado o primeiro jogo de voleibol?",
