@@ -10,7 +10,6 @@ import {
   IonPage,
   IonTitle,
   IonToolbar,
-  useIonRouter
 } from "@ionic/react";
 import Markdown from "react-markdown";
 
@@ -33,7 +32,7 @@ function Quiz(props: QuizProps) {
   const [score, setScore] = React.useState(0);
   const [ended, setEnded] = React.useState(false);
   const [usedTips, setUsedTips] = React.useState(false);
-  const router = useIonRouter();
+  // const router = useIonRouter();
   return (
     <IonPage>
       <IonHeader>

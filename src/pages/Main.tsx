@@ -41,10 +41,12 @@ function Aprender(props: { esporte: EsporteData }) {
 function Pratica(props: { esporte: EsporteData }) {
   return (
     <div>
-      <h1>Pratica do dia {props.esporte.nome}</h1>
-      <img src={"https://pa1.narvii.com/6425/9c9760bfcfde6ac7940292ae3855a3fc3e8e561c_hq.gif"} alt={"gif"}/>
-      <br/>
-      Fazer 5 repetições de Rolling Thunder !!!
+      {props.esporte.praticar?.map((item) => (
+        <IonItem key={item.id} href={`/volei/pratica/${item.id}`}>
+          <IonIcon slot={"start"} icon={item.icon}/>
+          <IonLabel>{item.nome}</IonLabel>
+        </IonItem>
+      ))}
     </div>
   )
 }

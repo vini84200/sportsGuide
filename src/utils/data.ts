@@ -23,6 +23,14 @@ export interface QuizItem {
   perguntas: Pergunta[];
 }
 
+export interface PraticaItem {
+  nome: string;
+  descricao: string;
+  id: string;
+  icon?: string;
+  video?: string;
+}
+
 export interface EsporteData {
   nome: string;
   descricao: string;
@@ -30,6 +38,7 @@ export interface EsporteData {
   icon?: JSX.Element;
   aprender: AprenderItem[];
   quiz: QuizItem[];
+  praticar: PraticaItem[];
 }
 
 export const data_all: Record<esporteId, EsporteData> = {
@@ -185,6 +194,15 @@ export const data_all: Record<esporteId, EsporteData> = {
           }
         ]
       }
+    ],
+    praticar: [
+      {
+        nome: 'Manchete',
+        descricao: await import('../conteudo/volei/praticar/manchete.md?raw').then((module) => module.default),
+        id: 'manchete',
+        icon: 'newspaper',
+        video: 'https://www.youtube.com/embed/mi4m0tUhM0w?si=wymdCVnfGSSHWgOa'
+      }
     ]
   },
   futebol: {
@@ -192,13 +210,15 @@ export const data_all: Record<esporteId, EsporteData> = {
     descricao: "",
     id: 'futebol',
     aprender: [],
-    quiz: []
+    quiz: [],
+    praticar: []
   },
   basquete: {
     nome: 'Basquete',
     descricao: "",
     id: 'basquete',
     aprender: [],
-    quiz: []
+    quiz: [],
+    praticar: []
   }
 }
