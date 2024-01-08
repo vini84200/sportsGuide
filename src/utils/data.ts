@@ -86,10 +86,10 @@ export const data_all: Record<esporteId, EsporteData> = {
             respostas: [
               "1942",
               "1943",
-              "1944",
+              "1964",
               "1945"
             ],
-            respostaCerta: 0
+            respostaCerta: 2
           },
           {
             pergunta: "Em que ano o Brasil conquistou a primeira medalha de ouro?",
@@ -110,6 +110,76 @@ export const data_all: Record<esporteId, EsporteData> = {
               "7"
             ],
             respostaCerta: 0
+          },
+          {
+            pergunta: "Qual é o objetivo do voleibol?",
+            respostas: [
+              "Fazer com que a bola toque o chão do próprio campo",
+              "Fazer com que a bola toque a rede",
+              "Fazer com que a bola toque o teto",
+              "Fazer com que a bola toque o chão do campo adversário",
+            ],
+            respostaCerta: 3
+          },
+          {
+            pergunta: "Quais são as dimensões da quadra?",
+            respostas: [
+              "16m x 8m",
+              "20m x 10m",
+              "18m x 9m",
+              "15m x 7m"
+            ],
+            respostaCerta: 2
+          },
+          {
+            pergunta: "Qual é a altura da rede no voleibol masculino?",
+            respostas: [
+              "2,43m",
+              "2,33m",
+              "2,53m",
+              "2,63m"
+            ],
+            respostaCerta: 0
+          },
+          {
+            pergunta: "Quantas medalhas de ouro o Brasil tem no voleibol masculino?",
+            respostas: [
+              "3",
+              "4",
+              "5",
+              "6"
+            ],
+            respostaCerta: 2
+          },
+          {
+            pergunta: "Qual dessa não é uma posição do voleibol?",
+            respostas: [
+              "Levantador",
+              "Líbero",
+              "Ponteiro",
+              "Zagueiro"
+            ],
+            respostaCerta: 3
+          },
+          {
+            pergunta: "Qual desses não é um fundamento do voleibol?",
+            respostas: [
+              "Saque",
+              "Recepção",
+              "Levantamento",
+              "Passe"
+            ],
+            respostaCerta: 3
+          },
+          {
+            pergunta: "Qual é o número da posição à esquerda do sacador?",
+            respostas: [
+              "1",
+              "2",
+              "6",
+              "4",
+            ],
+            respostaCerta: 2
           }
         ]
       }

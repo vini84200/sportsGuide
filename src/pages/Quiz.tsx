@@ -31,7 +31,7 @@ function Quiz(props: QuizProps) {
           <h2>Acabou!</h2>
           <h3>Score: {score}</h3>
           <IonButton onClick={() => {
-            router.push(`/${props.esporte}`)
+            router.goBack()
           }}>
             Voltar
           </IonButton>
@@ -41,7 +41,7 @@ function Quiz(props: QuizProps) {
         <h2>{data.perguntas[question].pergunta}</h2>
         <div>
           {data.perguntas[question].respostas.map((item, index) => (
-            <IonButton onClick={() => {
+            <IonButton key={index} onClick={() => {
               if (data?.perguntas[question].respostaCerta === index) {
                 setScore(score + 1)
               }

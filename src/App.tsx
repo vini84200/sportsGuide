@@ -44,7 +44,7 @@ const App: React.FC = () => (
           <Aprender esporte='volei' />
         </Route>
         <Route exact path="/volei/pratica">
-          Pratica volei
+          <img src={"https://pa1.narvii.com/6425/9c9760bfcfde6ac7940292ae3855a3fc3e8e561c_hq.gif"} alt={"gif"}/>
         </Route>
         <Route exact path="/volei/quiz/:id">
           <Quiz esporte='volei'/>
