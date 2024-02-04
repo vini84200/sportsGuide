@@ -7,6 +7,7 @@ import {
   IonButton,
   IonContent,
   IonHeader,
+  IonImg,
   IonPage,
   IonTitle,
   IonToolbar,
@@ -45,17 +46,50 @@ function Quiz(props: QuizProps) {
       </IonHeader>
       {ended ? (
         <IonContent>
-          <h2>Acabou!</h2>
-          <h3>Score: {score}</h3>
+          <div style={{
+              display: 'flex',
+              height: '100%',
+              flexDirection: 'column',
+              alignItems: 'center',
+              justifyContent: 'center'
+          }}>
+              <strong
+                  style={{
+                      fontSize: '2.9em',
+                      paddingBottom: '1em',
+                  }}>
+                  Parabéns!
+              </strong>
+              <IonImg
+                  src='../../public/trophy.png'
+                  alt="Atleta correndo"
+              />
+              <p
+                  style={{
+                      paddingTop: '1em',
+                      paddingBottom: '1em',
+                      fontSize: '1.2em',
+                  }}>
+                      Você concluiu o quiz. <br /> Sua pontuação foi de {score}!
+              </p>
+              <IonButton
+                  routerLink="/"
+                  slot="end"
+                  shape="round"
+                  expand="block"
+              >
+                  <p style={{color:'white'}}>Voltar para tela inicial</p>
+              </IonButton>
+          </div>
         </IonContent>
       ) : (
         <IonContent>
-          <h2>
+          <h2 style={{ paddingLeft: "1em", paddingRight: "1em" }}>
             <Markdown>
               {data.perguntas[question].pergunta}
             </Markdown>
           </h2>
-          <div style={{display: "flex", flexDirection: "column", width: "100vw"}}>
+          <div style={{display: "flex", flexDirection: "column", width: "100vw", padding: "1em"}}>
             {data.perguntas[question].respostas.map((item, index) => (
               <IonButton
                 style={{
@@ -100,20 +134,21 @@ function Quiz(props: QuizProps) {
               </IonButton>
             ))}
           </div>
-          <h3>Score: {score}</h3>
-          {data.perguntas[question].dica !== undefined && !usedTips && (
-            <IonButton onClick={()=> {
-              setUsedTips(true)
-            }}>
-              Dica
-            </IonButton>
-          )}
-          {data.perguntas[question].dica !== undefined && usedTips && (
-            <div>
-              Dica: {data.perguntas[question].dica!}
-            </div>
-
-          )}
+          <div style={{ paddingRight: "1em", paddingLeft: "1em" }}>
+            <h3>Score: {score}</h3>
+            {data.perguntas[question].dica !== undefined && !usedTips && (
+              <IonButton onClick={()=> {
+                setUsedTips(true)
+              }}>
+                Dica
+              </IonButton>
+            )}
+            {data.perguntas[question].dica !== undefined && usedTips && (
+              <div>
+                Dica: {data.perguntas[question].dica!}
+              </div>
+            )}
+          </div>
         </IonContent>
       )}
 
