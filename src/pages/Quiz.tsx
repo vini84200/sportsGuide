@@ -61,7 +61,7 @@ function Quiz(props: QuizProps) {
                   Parabéns!
               </strong>
               <IonImg
-                  src='../../public/trophy.png'
+                  src='/trophy.png'
                   alt="Atleta correndo"
               />
               <p

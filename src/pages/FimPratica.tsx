@@ -28,7 +28,7 @@ function FimPratica() {
                         Parabéns!
                     </strong>
                     <IonImg
-                        src='../../public/athlete.png'
+                        src='/athlete.png'
                         alt="Atleta correndo"
                     />
                     <p
