@@ -26,13 +26,18 @@ interface MainProps {
 
 function Aprender(props: { esporte: EsporteData }) {
   return (
-    <div>
+    <div style={{ padding: "1em 0" }} >
       {
         props.esporte.aprender.map((item) => (
           <div style={{ padding: "0.5em 0" }}>
             <IonItem key={item.id} href={`/volei/aprender/${item.id}`}>
-              <IonIcon slot={"start"} icon={item.icon}/>
-              <IonLabel>{item.nome}</IonLabel>
+              <p
+                style={{
+                        textAlign: 'center',
+                        fontWeight: '500',
+                        width: '100%',
+                        padding: "0 0.5em",
+                }}>{item.nome}</p>
             </IonItem>
           </div>
         ))
@@ -43,12 +48,17 @@ function Aprender(props: { esporte: EsporteData }) {
 
 function Pratica(props: { esporte: EsporteData }) {
   return (
-    <div>
+    <div style={{ padding: "1em 0" }} >
       {props.esporte.praticar?.map((item) => (
         <div style={{ padding: "0.5em 0" }}>
           <IonItem key={item.id} href={`/volei/pratica/${item.id}`}>
-            <IonIcon slot={"start"} icon={item.icon}/>
-            <IonLabel>{item.nome}</IonLabel>
+            <p
+              style={{
+                      textAlign: 'center',
+                      fontWeight: '500',
+                      width: '100%',
+                      padding: "0 0.5em",
+              }}>{item.nome}</p>
           </IonItem>
         </div>
       ))}
@@ -58,12 +68,17 @@ function Pratica(props: { esporte: EsporteData }) {
 
 function Quiz(props: { esporte: EsporteData }) {
   return (
-    <div>
+    <div style={{ padding: "1em 0" }} >
       {props.esporte.quiz?.map((item) => (
         <div style={{ padding: "0.5em 0" }}>
           <IonItem key={item.id} href={`/volei/quiz/${item.id}`}>
-            <IonIcon slot={"start"} icon={item.icon}/>
-            <IonLabel>{item.nome}</IonLabel>
+            <p
+              style={{
+                      textAlign: 'center',
+                      fontWeight: '500',
+                      width: '100%',
+                      padding: "0 0.5em",
+              }}>{item.nome}</p>
           </IonItem>
         </div>
       ))}

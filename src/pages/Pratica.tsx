@@ -44,7 +44,7 @@ function Pratica(props: PraticaProps) {
             <IonButton fill="clear" slot="start">
               <IonBackButton defaultHref={`/${props.esporte}/pratica`}/>
             </IonButton>
-            <IonTitle>{data.nome}</IonTitle>
+            <IonTitle style={{ padding: '0' }}>{data.nome}</IonTitle>
           </IonToolbar>
         </IonHeader>
         <IonContent>

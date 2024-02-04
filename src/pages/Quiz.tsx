@@ -41,7 +41,7 @@ function Quiz(props: QuizProps) {
           <IonButton fill="clear" slot="start">
             <IonBackButton defaultHref={`/${props.esporte}/quiz`}/>
           </IonButton>
-          <IonTitle>Quiz {props.esporte}</IonTitle>
+          <IonTitle style={{ padding: '0' }}>Quiz {props.esporte}</IonTitle>
         </IonToolbar>
       </IonHeader>
       {ended ? (
@@ -70,7 +70,7 @@ function Quiz(props: QuizProps) {
                       paddingBottom: '1em',
                       fontSize: '1.2em',
                   }}>
-                      Você concluiu o quiz. <br /> Sua pontuação foi de {score}!
+                      Você concluiu o quiz. <br /> Você acertou {score} de {question + 1} perguntas!
               </p>
               <IonButton
                   routerLink="/"
@@ -99,11 +99,7 @@ function Quiz(props: QuizProps) {
 
                 key={index} onClick={() => {
                 if (data?.perguntas[question].respostaCerta === index) {
-                  if (!usedTips) {
-                    setScore(score + 2)
-                  } else {
-                    setScore(score + 1)
-                  }
+                  setScore(score + 1)
                 }
                 if (question + 1 < data.perguntas.length) {
                   setQuestion(question + 1)
@@ -135,7 +131,7 @@ function Quiz(props: QuizProps) {
             ))}
           </div>
           <div style={{ paddingRight: "1em", paddingLeft: "1em" }}>
-            <h3>Score: {score}</h3>
+            <h3>Acertos: {score} de {question}. </h3>
             {data.perguntas[question].dica !== undefined && !usedTips && (
               <IonButton onClick={()=> {
                 setUsedTips(true)
