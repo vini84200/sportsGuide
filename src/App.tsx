@@ -37,6 +37,7 @@ const App: React.FC = () => (
         <Route exact path="/home">
           <Home/>
         </Route>
+
         <Route exact path="/volei">
           <Main esporte='volei' tab='aprender'/>
         </Route>
@@ -58,12 +59,51 @@ const App: React.FC = () => (
         <Route exact path="/volei/pratica/:id">
           <Pratica esporte='volei'/>
         </Route>
+
         <Route exact path="/futebol">
-          <Main esporte='futebol'/>
+          <Main esporte='futebol' tab='aprender' />
         </Route>
+        <Route exact path="/futebol/aprender">
+          <Main esporte='futebol' tab='aprender' />
+        </Route>
+        <Route exact path="/futebol/aprender/:id">
+          <Aprender esporte='futebol' />
+        </Route>
+        <Route exact path="/futebol/quiz">
+          <Main esporte='futebol' tab='quiz'/>
+        </Route>
+        <Route exact path="/futebol/quiz/:id">
+          <Quiz esporte='futebol'/>
+        </Route>
+        <Route exact path="/futebol/pratica">
+          <Main esporte='futebol' tab='pratica'/>
+        </Route>
+        <Route exact path="/futebol/pratica/:id">
+          <Pratica esporte='futebol'/>
+        </Route>
+
         <Route exact path="/basquete">
-          <Main esporte='basquete'/>
+          <Main esporte='basquete' tab='aprender' />
         </Route>
+        <Route exact path="/basquete/aprender">
+          <Main esporte='basquete' tab='aprender' />
+        </Route>
+        <Route exact path="/basquete/aprender/:id">
+          <Aprender esporte='basquete' />
+        </Route>
+        <Route exact path="/basquete/quiz">
+          <Main esporte='basquete' tab='quiz'/>
+        </Route>
+        <Route exact path="/basquete/quiz/:id">
+          <Quiz esporte='basquete'/>
+        </Route>
+        <Route exact path="/basquete/pratica">
+          <Main esporte='basquete' tab='pratica'/>
+        </Route>
+        <Route exact path="/basquete/pratica/:id">
+          <Pratica esporte='basquete'/>
+        </Route>
+
         <Route exact path="/">
           <Redirect to="/home"/>
         </Route>

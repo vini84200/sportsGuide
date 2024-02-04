@@ -416,16 +416,399 @@ export const data_all: Record<esporteId, EsporteData> = {
     nome: 'Futebol',
     descricao: "Futebol é um jogo dinâmico onde dois times competem para marcar gols, utilizando habilidades como dribles, passes e chutes, criando uma intensa atmosfera de competição e emoção.",
     id: 'futebol',
-    aprender: [],
-    quiz: [],
-    praticar: []
+    aprender: [
+      {
+        nome: 'Controle de Bola',
+        id: 'controle',
+        arquivo: 'controle',
+      },
+      {
+        nome: 'Técnica de Chute',
+        id: 'chute',
+        arquivo: 'chute',
+      },
+      {
+        nome: 'Dribles Avançados',
+        id: 'dribles',
+        arquivo: 'dribles',
+      },
+      {
+        nome: 'Posicionamento Tático',
+        id: 'posicionamento',
+        arquivo: 'posicionamento',
+      },
+      {
+        nome: 'Cabeceio',
+        id: 'cabeceio',
+        arquivo: 'cabeceio',
+      },
+    ],
+    quiz: [
+      {
+        nome: 'Quiz sobre Chutes',
+        id: 'quiz1',
+        perguntas: [
+          {
+            pergunta: 'Qual é a técnica correta para um chute de longa distância?',
+            respostas: [
+              'Chapa externa',
+              'Bicicleta',
+              'Chute de trivela',
+              'Chute de calcanhar',
+            ],
+            respostaCerta: 0,
+          },
+          {
+            pergunta: 'Qual parte do pé é geralmente usada para chutar a bola de forma mais precisa?',
+            respostas: [
+              'Calcanhar',
+              'Lateral do pé',
+              'Ponta do pé',
+              'Peito do pé',
+            ],
+            respostaCerta: 3,
+          },
+          {
+            pergunta: 'O que é um "chute de efeito" no futebol?',
+            respostas: [
+              'Chute com muita força',
+              'Chute colocado',
+              'Chute com curva ou rotação',
+              'Chute de bicicleta',
+            ],
+            respostaCerta: 2,
+          },
+          {
+            pergunta: 'Qual é o nome do chute em que o jogador chuta a bola no ar antes que ela toque o solo?',
+            respostas: [
+              'Chute de voleio',
+              'Chute de cobertura',
+              'Chute de bicicleta',
+              'Chute de trivela',
+            ],
+            respostaCerta: 0,
+          },
+          {
+            pergunta: 'Em um pênalti, a que distância o jogador deve ficar da bola antes de chutar?',
+            respostas: [
+              '5 metros',
+              '10 metros',
+              '11 metros',
+              '12 metros',
+            ],
+            respostaCerta: 2,
+          },
+        ]
+      },
+      {
+        nome: 'Quiz sobre Controle de Bola',
+        id: 'quiz2',
+        perguntas: [
+          {
+            pergunta: 'Qual é a parte do corpo mais comumente usada para um controle de bola eficaz?',
+            respostas: [
+              'Peito',
+              'Cabeça',
+              'Coxa',
+              'Pé',
+            ],
+            respostaCerta: 3,
+          },
+          {
+            pergunta: 'O que é o "domínio aéreo" no contexto do controle de bola?',
+            respostas: [
+              'Controlar a bola no ar',
+              'Controlar a bola com a mão',
+              'Dominar a bola no chão',
+              'Dar passes altos',
+            ],
+            respostaCerta: 0,
+          },
+          {
+            pergunta: 'Qual termo é usado quando um jogador controla a bola instantaneamente após recebê-la, mantendo-a próxima ao corpo?',
+            respostas: [
+              'Drible',
+              'Cabeceio',
+              'Domínio limpo',
+              'Goleiro',
+            ],
+            respostaCerta: 2,
+          },
+          {
+            pergunta: 'O que significa o termo "embaixadinha" no futebol em relação ao controle de bola?',
+            respostas: [
+              'Driblar o goleiro',
+              'Fazer embaixadas no campo',
+              'Manter a bola no ar usando os pés',
+              'Controlar a bola com a cabeça',
+            ],
+            respostaCerta: 2,
+          },
+          {
+            pergunta: 'Qual é a importância do controle de bola no futebol moderno?',
+            respostas: [
+              'Apenas para exibição de habilidades',
+              'Facilitar a posse de bola e o jogo estratégico',
+              'Aumentar o número de gols marcados',
+              'Reduzir o tempo de jogo',
+            ],
+            respostaCerta: 1,
+          },
+        ]
+      },
+      {
+        nome: 'Quiz sobre Passes',
+        id: 'quiz3',
+        perguntas: [
+          {
+            pergunta: 'Qual é o nome do passe realizado com a parte interna do pé, mantendo o pé próximo ao solo?',
+            respostas: [
+              'Chute de longa distância',
+              'Passe de calcanhar',
+              'Passe rasteiro',
+              'Chute de efeito',
+            ],
+            respostaCerta: 2,
+          },
+          {
+            pergunta: 'O que é um "passe de calcanhar" no futebol?',
+            respostas: [
+              'Um passe realizado com a cabeça',
+              'Um passe realizado com a parte de trás do pé',
+              'Um passe feito com a ponta do pé',
+              'Um passe realizado de forma curva',
+            ],
+            respostaCerta: 1,
+          },
+          {
+            pergunta: 'Quando um jogador realiza um "chapeuzinho" no adversário, que tipo de passe ele está executando?',
+            respostas: [
+              'Passe longo',
+              'Passe de efeito',
+              'Passe por cima da cabeça do adversário',
+              'Passe de trivela',
+            ],
+            respostaCerta: 2,
+          },
+          {
+            pergunta: 'O que é um "passe em profundidade" no futebol?',
+            respostas: [
+              'Passe para trás',
+              'Passe longo em direção ao gol adversário',
+              'Passe de calcanhar',
+              'Passe em curva',
+            ],
+            respostaCerta: 1,
+          },
+          {
+            pergunta: 'Qual é a importância do passe na construção do jogo de uma equipe?',
+            respostas: [
+              'Apenas para aumentar as estatísticas individuais',
+              'Facilitar a posse de bola e criar oportunidades de gol',
+              'Reduzir a velocidade do jogo',
+              'Minimizar a interação entre os jogadores',
+            ],
+            respostaCerta: 1,
+          },
+        ]
+      },
+    ],
+    praticar: [
+      {
+        nome: 'Chute',
+        descricao: await import('../conteudo/futebol/praticar/chute.md?raw').then((module) => module.default),
+        id: 'chute',
+        video: 'https://www.youtube.com/embed/lJJTjhRK5HA'
+      },
+      {
+        nome: 'Passe',
+        descricao: await import('../conteudo/futebol/praticar/passe.md?raw').then((module) => module.default),
+        id: 'passe',
+        video: 'https://www.youtube.com/embed/9Iih993tRhk',
+      },
+      {
+        nome: 'Controle',
+        descricao: await import('../conteudo/futebol/praticar/controle.md?raw').then((module) => module.default),
+        id: 'controle',
+        video: 'https://www.youtube.com/embed/X-rTAcPE4zc',
+      },
+    ]
   },
   basquete: {
     nome: 'Basquete',
     descricao: "Basquete é um esporte frenético e emocionante, caracterizado por habilidades de arremesso, dribles e passes, onde duas equipes competem para marcar pontos ao arremessar a bola na cesta adversária.",
     id: 'basquete',
     aprender: [],
-    quiz: [],
+    quiz: [
+      {
+        nome: '',
+        id: '',
+        perguntas: [
+          {
+            pergunta: '',
+            respostas: [
+              '',
+              '',
+              '',
+              '',
+            ],
+            respostaCerta: 0,
+          },
+          {
+            pergunta: '',
+            respostas: [
+              '',
+              '',
+              '',
+              '',
+            ],
+            respostaCerta: 0,
+          },
+          {
+            pergunta: '',
+            respostas: [
+              '',
+              '',
+              '',
+              '',
+            ],
+            respostaCerta: 0,
+          },
+          {
+            pergunta: '',
+            respostas: [
+              '',
+              '',
+              '',
+              '',
+            ],
+            respostaCerta: 0,
+          },
+          {
+            pergunta: '',
+            respostas: [
+              '',
+              '',
+              '',
+              '',
+            ],
+            respostaCerta: 0,
+          },
+        ]
+      },
+      {
+        nome: '',
+        id: '',
+        perguntas: [
+          {
+            pergunta: '',
+            respostas: [
+              '',
+              '',
+              '',
+              '',
+            ],
+            respostaCerta: 0,
+          },
+          {
+            pergunta: '',
+            respostas: [
+              '',
+              '',
+              '',
+              '',
+            ],
+            respostaCerta: 0,
+          },
+          {
+            pergunta: '',
+            respostas: [
+              '',
+              '',
+              '',
+              '',
+            ],
+            respostaCerta: 0,
+          },
+          {
+            pergunta: '',
+            respostas: [
+              '',
+              '',
+              '',
+              '',
+            ],
+            respostaCerta: 0,
+          },
+          {
+            pergunta: '',
+            respostas: [
+              '',
+              '',
+              '',
+              '',
+            ],
+            respostaCerta: 0,
+          },
+        ]
+      },
+      {
+        nome: '',
+        id: '',
+        perguntas: [
+          {
+            pergunta: '',
+            respostas: [
+              '',
+              '',
+              '',
+              '',
+            ],
+            respostaCerta: 0,
+          },
+          {
+            pergunta: '',
+            respostas: [
+              '',
+              '',
+              '',
+              '',
+            ],
+            respostaCerta: 0,
+          },
+          {
+            pergunta: '',
+            respostas: [
+              '',
+              '',
+              '',
+              '',
+            ],
+            respostaCerta: 0,
+          },
+          {
+            pergunta: '',
+            respostas: [
+              '',
+              '',
+              '',
+              '',
+            ],
+            respostaCerta: 0,
+          },
+          {
+            pergunta: '',
+            respostas: [
+              '',
+              '',
+              '',
+              '',
+            ],
+            respostaCerta: 0,
+          },
+        ]
+      },
+    ],
     praticar: []
   }
 }

@@ -30,7 +30,7 @@ function Aprender(props: { esporte: EsporteData }) {
       {
         props.esporte.aprender.map((item) => (
           <div style={{ padding: "0.5em 0" }}>
-            <IonItem key={item.id} href={`/volei/aprender/${item.id}`}>
+            <IonItem key={item.id} href={`/${props.esporte.id}/aprender/${item.id}`}>
               <p
                 style={{
                         textAlign: 'center',
@@ -51,7 +51,7 @@ function Pratica(props: { esporte: EsporteData }) {
     <div style={{ padding: "1em 0" }} >
       {props.esporte.praticar?.map((item) => (
         <div style={{ padding: "0.5em 0" }}>
-          <IonItem key={item.id} href={`/volei/pratica/${item.id}`}>
+          <IonItem key={item.id} href={`/${props.esporte.id}/pratica/${item.id}`}>
             <p
               style={{
                       textAlign: 'center',
@@ -71,7 +71,7 @@ function Quiz(props: { esporte: EsporteData }) {
     <div style={{ padding: "1em 0" }} >
       {props.esporte.quiz?.map((item) => (
         <div style={{ padding: "0.5em 0" }}>
-          <IonItem key={item.id} href={`/volei/quiz/${item.id}`}>
+          <IonItem key={item.id} href={`/${props.esporte.id}/quiz/${item.id}`}>
             <p
               style={{
                       textAlign: 'center',
