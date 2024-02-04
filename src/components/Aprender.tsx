@@ -31,9 +31,8 @@ function Aprender(props: AprenderProps) {
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonButton fill="clear" slot="start"
-          >
-            <IonBackButton defaultHref={`/${props.esporte}`}/>
+          <IonButton fill="clear" slot="start">
+            <IonBackButton defaultHref={`/${props.esporte}/aprender`}/>
           </IonButton>
           <IonTitle>
             {data.nome}

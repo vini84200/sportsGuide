@@ -41,8 +41,8 @@ function Pratica(props: PraticaProps) {
       <IonPage id={"main-content"}>
         <IonHeader>
           <IonToolbar>
-            <IonButton routerLink="/volei" slot="start" fill="clear">
-              <IonBackButton defaultHref="/volei"/>
+            <IonButton fill="clear" slot="start">
+              <IonBackButton defaultHref={`/${props.esporte}/pratica`}/>
             </IonButton>
             <IonTitle>{data.nome}</IonTitle>
           </IonToolbar>

@@ -39,7 +39,7 @@ function Quiz(props: QuizProps) {
       <IonHeader>
         <IonToolbar>
           <IonButton fill="clear" slot="start">
-            <IonBackButton defaultHref={`/${props.esporte}`}/>
+            <IonBackButton defaultHref={`/${props.esporte}/quiz`}/>
           </IonButton>
           <IonTitle>Quiz {props.esporte}</IonTitle>
         </IonToolbar>

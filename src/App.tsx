@@ -38,13 +38,22 @@ const App: React.FC = () => (
           <Home/>
         </Route>
         <Route exact path="/volei">
-            <Main esporte='volei'/>
+          <Main esporte='volei' tab='aprender'/>
+        </Route>
+        <Route exact path="/volei/aprender">
+          <Main esporte='volei' tab='aprender'/>
         </Route>
         <Route exact path="/volei/aprender/:id">
           <Aprender esporte='volei' />
         </Route>
+        <Route exact path="/volei/quiz">
+          <Main esporte='volei' tab='quiz'/>
+        </Route>
         <Route exact path="/volei/quiz/:id">
           <Quiz esporte='volei'/>
+        </Route>
+        <Route exact path="/volei/pratica">
+          <Main esporte='volei' tab='pratica'/>
         </Route>
         <Route exact path="/volei/pratica/:id">
           <Pratica esporte='volei'/>

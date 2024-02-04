@@ -20,6 +20,7 @@ import {data_all, EsporteData} from "../utils/data";
 
 interface MainProps {
   esporte: 'volei' | 'futebol' | 'basquete';
+  tab: 'aprender' | 'pratica' | 'quiz';
 }
 
 
@@ -28,10 +29,12 @@ function Aprender(props: { esporte: EsporteData }) {
     <div>
       {
         props.esporte.aprender.map((item) => (
-          <IonItem key={item.id} href={`/volei/aprender/${item.id}`}>
-            <IonIcon slot={"start"} icon={item.icon}/>
-            <IonLabel>{item.nome}</IonLabel>
-        </IonItem>
+          <div style={{ padding: "0.5em 0" }}>
+            <IonItem key={item.id} href={`/volei/aprender/${item.id}`}>
+              <IonIcon slot={"start"} icon={item.icon}/>
+              <IonLabel>{item.nome}</IonLabel>
+            </IonItem>
+          </div>
         ))
       }
     </div>
@@ -42,10 +45,12 @@ function Pratica(props: { esporte: EsporteData }) {
   return (
     <div>
       {props.esporte.praticar?.map((item) => (
-        <IonItem key={item.id} href={`/volei/pratica/${item.id}`}>
-          <IonIcon slot={"start"} icon={item.icon}/>
-          <IonLabel>{item.nome}</IonLabel>
-        </IonItem>
+        <div style={{ padding: "0.5em 0" }}>
+          <IonItem key={item.id} href={`/volei/pratica/${item.id}`}>
+            <IonIcon slot={"start"} icon={item.icon}/>
+            <IonLabel>{item.nome}</IonLabel>
+          </IonItem>
+        </div>
       ))}
     </div>
   )
@@ -55,10 +60,12 @@ function Quiz(props: { esporte: EsporteData }) {
   return (
     <div>
       {props.esporte.quiz?.map((item) => (
-        <IonItem key={item.id} href={`/volei/quiz/${item.id}`}>
-          <IonIcon slot={"start"} icon={item.icon}/>
-          <IonLabel>{item.nome}</IonLabel>
-        </IonItem>
+        <div style={{ padding: "0.5em 0" }}>
+          <IonItem key={item.id} href={`/volei/quiz/${item.id}`}>
+            <IonIcon slot={"start"} icon={item.icon}/>
+            <IonLabel>{item.nome}</IonLabel>
+          </IonItem>
+        </div>
       ))}
     </div>
   )
@@ -67,7 +74,10 @@ function Quiz(props: { esporte: EsporteData }) {
 function Main(props: MainProps) {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const data = data_all[props.esporte];
-  const [tab, setTab] = React.useState("aprender");
+
+  const currentTab = props.tab ? props.tab : "aprender";
+
+  const [tab, setTab] = React.useState(currentTab);
 
   return (
     <IonPage>
