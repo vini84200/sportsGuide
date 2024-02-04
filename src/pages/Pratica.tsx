@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
+  IonBackButton,
   IonButton,
   IonContent,
   IonFooter,
@@ -10,11 +11,12 @@ import {
   IonTitle,
   IonToolbar
 } from "@ionic/react";
-import {chevronForwardCircleOutline, menu, pause} from "ionicons/icons";
+import {caretForwardOutline, chevronForwardCircleOutline, menu, pause} from "ionicons/icons";
 import {useParams} from "react-router";
 import {data_all, esporteId} from "../utils/data";
 import {Redirect} from "react-router-dom";
 import Markdown from "react-markdown";
+import { red } from '@mui/material/colors';
 
 interface ParamTypes {
   id: string
@@ -31,33 +33,26 @@ function Pratica(props: PraticaProps) {
     console.warn(`Pratica: ${id} não encontrado`)
     return <Redirect to={`/${props.esporte}`}/>
   }
+
+  const [isPlaying, setIsPlaying] = useState(false);
+
   return (
     <>
-      <IonMenu contentId="main-content">
-        <IonHeader>
-          <IonToolbar>
-            <IonTitle>Menu</IonTitle>
-          </IonToolbar>
-        </IonHeader>
-        <IonContent>
-          <IonButton href={`/volei`}>
-            Voltar
-          </IonButton>
-        </IonContent>
-      </IonMenu>
       <IonPage id={"main-content"}>
         <IonHeader>
           <IonToolbar>
-            <IonButton slot="start" fill="clear">
-              <IonMenuButton >
-                <IonIcon icon={menu}/>
-              </IonMenuButton>
+            <IonButton routerLink="/volei" slot="start" fill="clear">
+              <IonBackButton defaultHref="/volei"/>
             </IonButton>
             <IonTitle>{data.nome}</IonTitle>
           </IonToolbar>
         </IonHeader>
         <IonContent>
-          <div>
+          <div
+            style={{
+              padding: "1em",
+              textAlign: "justify"
+        }}>
             <embed src={data.video} width="100%" height="100%"/>
             <Markdown>
               {data.descricao}
@@ -74,27 +69,15 @@ function Pratica(props: PraticaProps) {
               justifyContent: "center",
               alignItems: "center"
             }}>
-
-              <IonButton onClick={() => {
-              }} slot="end"
-                         fill="clear"
+              {/* fill="clear" */}
+              <IonButton routerLink="/fim_pratica"
+                         slot="end"
                          shape="round"
+                         expand="block"
               >
-                <IonIcon icon={pause} style={
-                  {fontSize: "3rem"}
-                }/>
-              </IonButton>
-              <IonButton onClick={() => {
-              }} slot="end"
-                         fill="clear"
-                         shape="round"
-              >
-                <IonIcon icon={chevronForwardCircleOutline} style={
-                  {fontSize: "2rem"}
-                }/>
+                <p style={{color:'white'}}>Concluir</p>
               </IonButton>
             </div>
-
           </IonToolbar>
         </IonFooter>
       </IonPage>

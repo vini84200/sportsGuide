@@ -1,6 +1,9 @@
 import React from 'react';
 import './ExploreContainer.css';
 import {IonButton} from "@ionic/react";
+import SportsVolleyballIcon from '@mui/icons-material/SportsVolleyball';
+import SportsSoccerIcon from '@mui/icons-material/SportsSoccer';
+import SportsBasketballIcon from '@mui/icons-material/SportsBasketball';
 
 interface ContainerProps { }
 
@@ -17,10 +20,40 @@ const HomeLogo: React.FC<ContainerProps> = () => {
           marginBottom: '4em',
           textAlign: 'center',
         }}
-      >Sports Guide</strong>
-      <IonButton routerLink="/volei" expand="block">Volêibol</IonButton>
-      <IonButton routerLink="/futebol" expand="block">Futebol</IonButton>
-      <IonButton routerLink="/basquete" expand="block">Basquete</IonButton>
+      >SportsGuide</strong>
+      <IonButton routerLink="/volei" expand="block">
+        <div
+          style={{
+            display: 'flex',
+            width: '40%',
+            justifyContent: 'center',
+        }}>
+          <SportsVolleyballIcon />
+          <p style={{ color: 'white', marginLeft: '0.5em' }}>Voleibol</p>
+        </div>
+      </IonButton>
+      <IonButton routerLink="/futebol" expand="block">
+        <div
+          style={{
+            display: 'flex',
+            width: '40%',
+            justifyContent: 'center',
+        }}>
+          <SportsSoccerIcon />
+          <p style={{ color: 'white', marginLeft: '0.5em' }}>Futebol</p>
+        </div>
+      </IonButton>
+      <IonButton routerLink="/basquete" expand="block">
+        <div
+          style={{
+            display: 'flex',
+            width: '40%',
+            justifyContent: 'center',
+        }}>
+          <SportsBasketballIcon />
+          <p style={{ color: 'white', marginLeft: '0.5em' }}>Basquete</p>
+        </div>
+      </IonButton>
     </div>
   );
 };

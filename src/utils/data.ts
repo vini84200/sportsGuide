@@ -43,7 +43,7 @@ export interface EsporteData {
 
 export const data_all: Record<esporteId, EsporteData> = {
   volei: {
-    nome: 'Volêibol',
+    nome: 'Voleibol',
     descricao: "O volêi é um esporte muito legal",
     id: 'volei',
     aprender: [
