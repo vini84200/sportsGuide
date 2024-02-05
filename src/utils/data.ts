@@ -120,7 +120,8 @@ export const data_all: Record<esporteId, EsporteData> = {
               "1964",
               "1945"
             ],
-            respostaCerta: 2
+            respostaCerta: 2,
+            dica: 'Ano do início da ditadura militar no Brasil',
           },
           {
             pergunta: "Em que ano o Brasil conquistou a primeira medalha de ouro?",
@@ -140,7 +141,8 @@ export const data_all: Record<esporteId, EsporteData> = {
               "Estados Unidos",
               "Canadá"
             ],
-            respostaCerta: 2
+            respostaCerta: 2,
+            dica: 'País que também criou o Basquete'
           },
           {
             pergunta: "Quantas medalhas de ouro o Brasil tem no voleibol masculino?",
@@ -196,7 +198,8 @@ export const data_all: Record<esporteId, EsporteData> = {
               "Ponteiro",
               "Zagueiro"
             ],
-            respostaCerta: 3
+            respostaCerta: 3,
+            dica: 'A opção que não é uma posição do voleibol é uma posição de futebol.'
           },
           {
             pergunta: 'Qual é o número máximo de toques permitidos por equipe para retornar a bola à quadra adversária no voleibol indoor?',
@@ -206,7 +209,8 @@ export const data_all: Record<esporteId, EsporteData> = {
               '4 toques',
               '5 toques',
             ],
-            respostaCerta: 1
+            respostaCerta: 1,
+            dica: 'A ordem padrão de ação no vôlei é Recepção, Levantamento e Corte.'
           }
         ]
       },
@@ -233,6 +237,7 @@ export const data_all: Record<esporteId, EsporteData> = {
               'Para melhorar a defesa',
             ],
             respostaCerta: 1,
+            dica: 'O posicionamento de ataque tem que se preocupar exclusivamente na ofensiva.'
           },
           {
             pergunta: 'O que as equipes de alto nível adotam em situações de contra-ataque?',
@@ -263,6 +268,7 @@ export const data_all: Record<esporteId, EsporteData> = {
               'Determinar a temperatura ambiente',
             ],
             respostaCerta: 0,
+            dica: 'Um dos objetivos do saque é dificultar as ações ofensivas do time adversário.'
           }
         ]
       },
@@ -279,6 +285,7 @@ export const data_all: Record<esporteId, EsporteData> = {
               'Manter uma posição defensiva sólida',
             ],
             respostaCerta: 2,
+            dica: 'O levantamento é a penúltima de um time durante o seu ataque.'
           },
           {
             pergunta: 'Quais são as áreas da quadra que um levantador deve priorizar ao escolher para distribuir os levantamentos?',
@@ -309,6 +316,7 @@ export const data_all: Record<esporteId, EsporteData> = {
               'O levantamento deve ser limpo, sem rotação excessiva ou carregamento',
             ],
             respostaCerta: 3,
+            dica: 'Condução é uma falta no vôlei.'
           },
           {
             pergunta: 'Qual é a importância da comunicação entre o levantador e os atacantes durante o jogo?',
@@ -355,6 +363,7 @@ export const data_all: Record<esporteId, EsporteData> = {
               'Aumenta a chance de erros',
             ],
             respostaCerta: 1,
+            dica: 'A recepção tem que facilitar o levantamento.'
           },
           {
             pergunta: 'Como a comunicação entre os passadores (receptores) pode impactar a recepção?',
@@ -375,6 +384,7 @@ export const data_all: Record<esporteId, EsporteData> = {
               'Rotação excessiva dos ombros durante o contato',
             ],
             respostaCerta: 3,
+            dica: 'Movimentos excessivos dificultam o controle da bola.'
           }
         ]
       },
@@ -477,6 +487,7 @@ export const data_all: Record<esporteId, EsporteData> = {
               'Chute de bicicleta',
             ],
             respostaCerta: 2,
+            dica: 'Esse chute é muito enfatizado em cobranças de falta.'
           },
           {
             pergunta: 'Qual é o nome do chute em que o jogador chuta a bola no ar antes que ela toque o solo?',
@@ -497,6 +508,7 @@ export const data_all: Record<esporteId, EsporteData> = {
               '12 metros',
             ],
             respostaCerta: 2,
+            dica: 'A resposta é o mesmo número de camisa que o Neymar usava no Barcelona.'
           },
         ]
       },
@@ -513,6 +525,7 @@ export const data_all: Record<esporteId, EsporteData> = {
               'Pé',
             ],
             respostaCerta: 3,
+            dica: 'O nome do esporte em Inglês Britânico é Football'
           },
           {
             pergunta: 'O que é o "domínio aéreo" no contexto do controle de bola?',
@@ -553,6 +566,7 @@ export const data_all: Record<esporteId, EsporteData> = {
               'Reduzir o tempo de jogo',
             ],
             respostaCerta: 1,
+            dica: 'Dominando a bola rápido, você pode fazer outras ações mais rápido...'
           },
         ]
       },
@@ -599,6 +613,7 @@ export const data_all: Record<esporteId, EsporteData> = {
               'Passe em curva',
             ],
             respostaCerta: 1,
+            dica: 'Também conhecido como passe que "quebra linhas".'
           },
           {
             pergunta: 'Qual é a importância do passe na construção do jogo de uma equipe?',
@@ -609,6 +624,7 @@ export const data_all: Record<esporteId, EsporteData> = {
               'Minimizar a interação entre os jogadores',
             ],
             respostaCerta: 1,
+            dica: 'A bola corre mais rápido que os jogadores.'
           },
         ]
       },
@@ -689,6 +705,7 @@ export const data_all: Record<esporteId, EsporteData> = {
               'Velocidade de corrida',
             ],
             respostaCerta: 2,
+            dica: 'Arremessos são comumente feitos com o jogador parado, em concentração.'
           },
           {
             pergunta: 'Qual é uma técnica comum para aumentar a versatilidade do arremesso?',
@@ -699,6 +716,7 @@ export const data_all: Record<esporteId, EsporteData> = {
               'Ignorar o treinamento físico',
             ],
             respostaCerta: 2,
+            dica: 'Imitar cenários de jogo pode ser útil para aumentar a versatilidade do arremesso.'
           },
           {
             pergunta: 'O que é crucial para aprimorar as habilidades de arremesso?',
@@ -745,6 +763,7 @@ export const data_all: Record<esporteId, EsporteData> = {
               'Apenas para canhotos',
             ],
             respostaCerta: 1,
+            dica: 'Driblar só com uma mão faz com que o defensor possa se posicionar na direção da mão que você dribla.'
           },
           {
             pergunta: 'O que é recomendado durante dribles em situações de defesa intensa?',
@@ -765,6 +784,7 @@ export const data_all: Record<esporteId, EsporteData> = {
               'Facilitar a interceptação da bola',
             ],
             respostaCerta: 2,
+            dica: 'Em um crossover, o jogador troca a bola de mãos rapidamente.'
           },
           {
             pergunta: 'Por que é essencial praticar dribles em movimento?',
@@ -811,6 +831,7 @@ export const data_all: Record<esporteId, EsporteData> = {
               'O pivô',
             ],
             respostaCerta: 3,
+            dica: 'Uma "screen" é uma "barreira", portanto, é útil que seja feita por um jogador pesado.'
           },
           {
             pergunta: 'O que um jogador deve fazer após realizar uma "screen" com sucesso?',
@@ -831,6 +852,7 @@ export const data_all: Record<esporteId, EsporteData> = {
               'Utilizar uma zona defensiva',
             ],
             respostaCerta: 0,
+            dica: 'Em inglês, a tática chama-se "pick-n\'-roll".'
           },
         ]
       },
